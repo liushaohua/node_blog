@@ -1,7 +1,7 @@
 {
   "apps": [{
     "name": "node_blog",
-    "script": "www/production.js 1234",
+    "script": "www/production.js 8361",
     "cwd": "/home/wwwroot/node_blog",
     "exec_mode": "cluster",
     "max_memory_restart": "1G",
