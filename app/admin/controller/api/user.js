@@ -44,7 +44,6 @@ var _class = function (_Base) {
    * get
    * @return {[type]} [description]
    */
-
   _class.prototype.getAction = function getAction(self) {
     var where = {};
     if (this.id) {
@@ -66,7 +65,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.postAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(self) {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(self) {
       var data, insertId;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -101,14 +100,14 @@ var _class = function (_Base) {
     }));
 
     function postAction(_x) {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return postAction;
   }();
 
   _class.prototype.generateKey = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(self, status) {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(self, status) {
       var isAdmin, app_key, app_secret, user, options, transporter, site_url;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -169,7 +168,7 @@ var _class = function (_Base) {
     }));
 
     function generateKey(_x2, _x3) {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return generateKey;
@@ -181,7 +180,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.putAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(self) {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(self) {
       var type, userInfo, _rows, data, rows;
 
       return _regenerator2.default.wrap(function _callee3$(_context3) {
@@ -247,7 +246,7 @@ var _class = function (_Base) {
     }));
 
     function putAction(_x4) {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return putAction;

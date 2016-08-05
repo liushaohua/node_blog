@@ -71,9 +71,8 @@ var _class = function (_Base) {
    * get
    * @return {[type]} [description]
    */
-
   _class.prototype.getAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(self) {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(self) {
       var data, where, keywords, field;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -157,7 +156,7 @@ var _class = function (_Base) {
     }));
 
     function getAction(_x) {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return getAction;
@@ -173,7 +172,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.postAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var data, post, insertId;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -232,7 +231,7 @@ var _class = function (_Base) {
     }));
 
     function postAction() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return postAction;
@@ -244,7 +243,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.putAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
       var data, rows;
       return _regenerator2.default.wrap(function _callee3$(_context3) {
         while (1) {
@@ -297,14 +296,14 @@ var _class = function (_Base) {
     }));
 
     function putAction() {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return putAction;
   }();
 
   _class.prototype.deleteAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
+    var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
       var post;
       return _regenerator2.default.wrap(function _callee4$(_context4) {
         while (1) {
@@ -352,14 +351,14 @@ var _class = function (_Base) {
     }));
 
     function deleteAction() {
-      return ref.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     }
 
     return deleteAction;
   }();
 
   _class.prototype.pushPost = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(post) {
+    var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(post) {
       var postOpt, canPush, options, push_sites, push_sites_keys, _options, site_url, pushes, result;
 
       return _regenerator2.default.wrap(function _callee5$(_context5) {
@@ -435,14 +434,14 @@ var _class = function (_Base) {
     }));
 
     function pushPost(_x2) {
-      return ref.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     }
 
     return pushPost;
   }();
 
   _class.prototype.lastest = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6() {
+    var _ref6 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6() {
       var userId, data;
       return _regenerator2.default.wrap(function _callee6$(_context6) {
         while (1) {
@@ -465,7 +464,7 @@ var _class = function (_Base) {
     }));
 
     function lastest() {
-      return ref.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     }
 
     return lastest;
@@ -489,7 +488,7 @@ var _class = function (_Base) {
   };
 
   _class.prototype.getTagIds = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee7(tags) {
+    var _ref7 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee7(tags) {
       var modelInstance, tagIds, promises;
       return _regenerator2.default.wrap(function _callee7$(_context7) {
         while (1) {
@@ -527,7 +526,7 @@ var _class = function (_Base) {
     }));
 
     function getTagIds(_x3) {
-      return ref.apply(this, arguments);
+      return _ref7.apply(this, arguments);
     }
 
     return getTagIds;

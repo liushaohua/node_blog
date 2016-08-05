@@ -48,7 +48,6 @@ var _class = function (_think$service$base) {
    * init
    * @return {}         []
    */
-
   _class.prototype.init = function init() {
     var _think$service$base$p;
 
@@ -65,7 +64,7 @@ var _class = function (_think$service$base) {
 
 
   _class.prototype.sync = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var optionsModel, options, comment;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -108,7 +107,7 @@ var _class = function (_think$service$base) {
     }));
 
     function sync() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return sync;
@@ -120,7 +119,7 @@ var _class = function (_think$service$base) {
 
 
   _class.prototype.getPostData = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var postModel, allPost, keys;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -150,7 +149,7 @@ var _class = function (_think$service$base) {
     }));
 
     function getPostData() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return getPostData;
@@ -162,7 +161,7 @@ var _class = function (_think$service$base) {
 
 
   _class.prototype.syncFromDisqus = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(comment) {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(comment) {
       var _this2 = this;
 
       var postData, threads, index, ths, url, fn, response, data, promises;
@@ -268,7 +267,7 @@ var _class = function (_think$service$base) {
     }));
 
     function syncFromDisqus(_x) {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return syncFromDisqus;
@@ -280,7 +279,7 @@ var _class = function (_think$service$base) {
 
 
   _class.prototype.syncFromDuoshuo = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4(comment) {
+    var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4(comment) {
       var postData, threads, index, ths, url, fn, response, data, promises, key, id, promise;
       return _regenerator2.default.wrap(function _callee4$(_context4) {
         while (1) {
@@ -383,7 +382,7 @@ var _class = function (_think$service$base) {
     }));
 
     function syncFromDuoshuo(_x2) {
-      return ref.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     }
 
     return syncFromDuoshuo;

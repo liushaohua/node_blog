@@ -76,7 +76,7 @@ var _class = function (_base) {
   };
 
   _class.prototype.getAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var needUpdate, onlineVersion, mysql, data, where;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -163,14 +163,14 @@ var _class = function (_base) {
     }));
 
     function getAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return getAction;
   }();
 
   _class.prototype.getConfig = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var items, siteConfig;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -199,7 +199,7 @@ var _class = function (_base) {
     }));
 
     function getConfig() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return getConfig;

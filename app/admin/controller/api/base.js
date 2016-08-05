@@ -27,7 +27,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * base rest controller
  */
-
 var _class = function (_think$controller$res) {
   (0, _inherits3.default)(_class, _think$controller$res);
 
@@ -36,7 +35,6 @@ var _class = function (_think$controller$res) {
    * @param  {[type]} http [description]
    * @return {[type]}      [description]
    */
-
   function _class(http) {
     (0, _classCallCheck3.default)(this, _class);
 
@@ -59,7 +57,7 @@ var _class = function (_think$controller$res) {
 
 
   _class.prototype.__before = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var userInfo, type, action, name;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -129,7 +127,7 @@ var _class = function (_think$controller$res) {
     }));
 
     function __before() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return __before;

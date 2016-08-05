@@ -39,7 +39,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * relation model
  */
-
 var _class = function (_Base) {
   (0, _inherits3.default)(_class, _Base);
 
@@ -53,7 +52,6 @@ var _class = function (_Base) {
    * @param  {} args []
    * @return {}         []
    */
-
   _class.prototype.init = function init() {
     var _Base$prototype$init;
 
@@ -96,7 +94,7 @@ var _class = function (_Base) {
   };
 
   _class.prototype.savePost = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(data) {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(data) {
       var info;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -128,14 +126,14 @@ var _class = function (_Base) {
     }));
 
     function savePost(_x) {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return savePost;
   }();
 
   _class.prototype.deletePost = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(post_id) {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(post_id) {
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
@@ -151,7 +149,7 @@ var _class = function (_Base) {
     }));
 
     function deletePost(_x2) {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return deletePost;
@@ -185,7 +183,6 @@ var _class = function (_Base) {
       is_public: 1, //公开
       type: 0, //文章
       status: 3 };
-    //已经发布
     if (user_id) {
       where.user_id = user_id;
     }
@@ -193,7 +190,7 @@ var _class = function (_Base) {
   };
 
   _class.prototype.afterUpdate = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(data, options) {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(data, options) {
       return _regenerator2.default.wrap(function _callee3$(_context3) {
         while (1) {
           switch (_context3.prev = _context3.next) {
@@ -213,14 +210,14 @@ var _class = function (_Base) {
     }));
 
     function afterUpdate(_x4, _x5) {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return afterUpdate;
   }();
 
   _class.prototype.afterDelete = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4(data, options) {
+    var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4(data, options) {
       return _regenerator2.default.wrap(function _callee4$(_context4) {
         while (1) {
           switch (_context4.prev = _context4.next) {
@@ -240,14 +237,14 @@ var _class = function (_Base) {
     }));
 
     function afterDelete(_x6, _x7) {
-      return ref.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     }
 
     return afterDelete;
   }();
 
   _class.prototype.afterAdd = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(data, options) {
+    var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(data, options) {
       return _regenerator2.default.wrap(function _callee5$(_context5) {
         while (1) {
           switch (_context5.prev = _context5.next) {
@@ -267,7 +264,7 @@ var _class = function (_Base) {
     }));
 
     function afterAdd(_x8, _x9) {
-      return ref.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     }
 
     return afterAdd;

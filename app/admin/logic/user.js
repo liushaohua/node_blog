@@ -33,7 +33,6 @@ var _class = function (_think$logic$base) {
    * index action logic
    * @return {} []
    */
-
   _class.prototype.indexAction = function indexAction() {};
   /**
    * 添加或者修改用户

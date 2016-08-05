@@ -32,7 +32,6 @@ var _class = function (_think$controller$bas) {
    * @param  {Number} status []
    * @return {Promise}        []
    */
-
   _class.prototype.displayError = function displayError(status) {
     var _this2 = this;
 

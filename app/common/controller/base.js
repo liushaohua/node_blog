@@ -39,9 +39,8 @@ var _class = function (_think$controller$bas) {
    * before magic method
    * @return {} []
    */
-
   _class.prototype.__before = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var model, options;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -70,7 +69,7 @@ var _class = function (_think$controller$bas) {
     }));
 
     function __before() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return __before;

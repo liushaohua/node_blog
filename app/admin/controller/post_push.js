@@ -50,7 +50,7 @@ var _class = function (_Post) {
   }
 
   _class.prototype.__before = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
@@ -63,14 +63,14 @@ var _class = function (_Post) {
     }));
 
     function __before() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return __before;
   }();
 
   _class.prototype.checkAuth = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(data) {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(data) {
       var app_key, auth_key, post, poster, app_secret, passwordHash, result;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -111,14 +111,14 @@ var _class = function (_Post) {
     }));
 
     function checkAuth(_x) {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return checkAuth;
   }();
 
   _class.prototype.updatePost = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(post) {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(post) {
       var rows;
       return _regenerator2.default.wrap(function _callee3$(_context3) {
         while (1) {
@@ -159,14 +159,14 @@ var _class = function (_Post) {
     }));
 
     function updatePost(_x2) {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return updatePost;
   }();
 
   _class.prototype.getAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
+    var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
       var _get, app_key, auth_key, result;
 
       return _regenerator2.default.wrap(function _callee4$(_context4) {
@@ -200,14 +200,14 @@ var _class = function (_Post) {
     }));
 
     function getAction() {
-      return ref.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     }
 
     return getAction;
   }();
 
   _class.prototype.postAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5() {
+    var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5() {
       var post, exPost, insertId;
       return _regenerator2.default.wrap(function _callee5$(_context5) {
         while (1) {
@@ -277,14 +277,14 @@ var _class = function (_Post) {
     }));
 
     function postAction() {
-      return ref.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     }
 
     return postAction;
   }();
 
   _class.prototype.putAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6() {
+    var _ref6 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6() {
       return _regenerator2.default.wrap(function _callee6$(_context6) {
         while (1) {
           switch (_context6.prev = _context6.next) {
@@ -297,14 +297,14 @@ var _class = function (_Post) {
     }));
 
     function putAction() {
-      return ref.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     }
 
     return putAction;
   }();
 
   _class.prototype.deleteAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee7() {
+    var _ref7 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee7() {
       return _regenerator2.default.wrap(function _callee7$(_context7) {
         while (1) {
           switch (_context7.prev = _context7.next) {
@@ -317,7 +317,7 @@ var _class = function (_Post) {
     }));
 
     function deleteAction() {
-      return ref.apply(this, arguments);
+      return _ref7.apply(this, arguments);
     }
 
     return deleteAction;

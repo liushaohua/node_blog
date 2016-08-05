@@ -63,9 +63,8 @@ var _class = function (_think$model$base) {
    * get options
    * @return {} []
    */
-
   _class.prototype.getOptions = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(flag) {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(flag) {
       var _this2 = this;
 
       var ret;
@@ -138,7 +137,7 @@ var _class = function (_think$model$base) {
     }));
 
     function getOptions(_x) {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return getOptions;
@@ -150,8 +149,8 @@ var _class = function (_think$model$base) {
 
 
   _class.prototype.updateOptions = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(key, value) {
-      var _ref;
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3(key, value) {
+      var _ref4;
 
       var data, cacheData, changedData, _key2, p1, promises, _key3, _value, exist, p;
 
@@ -159,7 +158,7 @@ var _class = function (_think$model$base) {
         while (1) {
           switch (_context3.prev = _context3.next) {
             case 0:
-              data = think.isObject(key) ? think.extend({}, key) : (_ref = {}, _ref[key] = value, _ref);
+              data = think.isObject(key) ? think.extend({}, key) : (_ref4 = {}, _ref4[key] = value, _ref4);
               _context3.next = 3;
               return think.cache(this.cacheKey, undefined, this.cacheOptions);
 
@@ -240,7 +239,7 @@ var _class = function (_think$model$base) {
     }));
 
     function updateOptions(_x2, _x3) {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return updateOptions;

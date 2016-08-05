@@ -37,7 +37,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * model
  */
-
 var _class = function (_Base) {
   (0, _inherits3.default)(_class, _Base);
 
@@ -52,7 +51,6 @@ var _class = function (_Base) {
    * @param  {String} salt     []
    * @return {String}          []
    */
-
   _class.prototype.getEncryptPassword = function getEncryptPassword(password) {
     var passwordHash = new _phpass.PasswordHash();
     var hash = passwordHash.hashPassword(password);
@@ -134,7 +132,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.saveUser = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(data, ip) {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(data, ip) {
       var info, password, updateData, count;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -207,7 +205,7 @@ var _class = function (_Base) {
     }));
 
     function saveUser(_x, _x2) {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return saveUser;

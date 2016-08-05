@@ -44,9 +44,8 @@ var _class = function (_Base) {
    * login
    * @return {} []
    */
-
   _class.prototype.loginAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var model, options, two_factor_auth, verified, username, userModel, userInfo, password;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -134,7 +133,7 @@ var _class = function (_Base) {
     }));
 
     function loginAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return loginAction;
@@ -146,7 +145,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.logoutAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
@@ -166,7 +165,7 @@ var _class = function (_Base) {
     }));
 
     function logoutAction() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return logoutAction;

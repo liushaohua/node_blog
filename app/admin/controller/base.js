@@ -35,9 +35,8 @@ var _class = function (_think$controller$bas) {
   /**
    * before
    */
-
   _class.prototype.__before = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var http, userInfo;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -96,7 +95,7 @@ var _class = function (_think$controller$bas) {
     }));
 
     function __before() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return __before;
@@ -108,7 +107,7 @@ var _class = function (_think$controller$bas) {
 
 
   _class.prototype.__call = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var model, options;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -151,7 +150,7 @@ var _class = function (_think$controller$bas) {
     }));
 
     function __call() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return __call;

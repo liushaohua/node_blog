@@ -59,9 +59,8 @@ var _class = function (_think$model$relation) {
    * get hot tags
    * @return {} []
    */
-
   _class.prototype.getHotTags = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var data;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -83,15 +82,15 @@ var _class = function (_think$model$relation) {
     }));
 
     function getHotTags() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return getHotTags;
   }();
 
   _class.prototype.getTagArchive = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
-      var data, result, _iterator, _isArray, _i, _ref, tag;
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+      var data, result, _iterator, _isArray, _i, _ref3, tag;
 
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -129,7 +128,7 @@ var _class = function (_think$model$relation) {
               return _context2.abrupt('break', 19);
 
             case 8:
-              _ref = _iterator[_i++];
+              _ref3 = _iterator[_i++];
               _context2.next = 15;
               break;
 
@@ -144,10 +143,10 @@ var _class = function (_think$model$relation) {
               return _context2.abrupt('break', 19);
 
             case 14:
-              _ref = _i.value;
+              _ref3 = _i.value;
 
             case 15:
-              tag = _ref;
+              tag = _ref3;
 
               if (result[tag.pathname]) {
                 result[tag.pathname].count += 1;
@@ -177,7 +176,7 @@ var _class = function (_think$model$relation) {
     }));
 
     function getTagArchive() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return getTagArchive;

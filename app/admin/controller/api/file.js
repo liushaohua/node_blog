@@ -74,7 +74,7 @@ var _class = function (_Base) {
   }
 
   _class.prototype.postAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var file, contentType, basename, destDir, destPath, result;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -144,14 +144,14 @@ var _class = function (_Base) {
     }));
 
     function postAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return postAction;
   }();
 
   _class.prototype.getFileByUrl = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(url) {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(url) {
       var _this2 = this;
 
       var fn, result, writeFile, destDir, basename, destPath;
@@ -210,14 +210,14 @@ var _class = function (_Base) {
     }));
 
     function getFileByUrl(_x) {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return getFileByUrl;
   }();
 
   _class.prototype.importFromWP = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6() {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6() {
       var _this3 = this;
 
       var file, readFile, parser, parseString, wxrXML, wxrJSON, channel, categories, cateModelInstance, categoriesPromise, tags, tagModelInstance, tagsPromise, postStatus, posts, postModelInstance, postsPromise, pages, pageModelInstance, pagesPromise;
@@ -272,8 +272,7 @@ var _class = function (_Base) {
                             display_name: author['wp:author_display_name'][0],
                             password: 'admin12345678',
                             type: 2, //默认导入用户都为编辑
-                            status: 2 }, //默认导入用户都处于禁用状态
-                          '127.0.0.1');
+                            status: 2 }, '127.0.0.1');
                         });
                         _context3.next = 4;
                         return _promise2.default.all(authorsPromise);
@@ -336,13 +335,12 @@ var _class = function (_Base) {
                 pending: 1, //待审核
                 private: 3, //私密文章对应 is_public 字段为 false, 发布状态为已发布
                 trash: 2 };
-              //删除文章没有对应关系遂转为已拒绝文章
               posts = channel.item.filter(function (item) {
                 return item['wp:post_type'][0] === 'post';
               });
               postModelInstance = this.model('post');
               postsPromise = posts.map(function () {
-                var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4(item) {
+                var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4(item) {
                   var user, cate, cates, summary, post;
                   return _regenerator2.default.wrap(function _callee4$(_context4) {
                     while (1) {
@@ -433,8 +431,9 @@ var _class = function (_Base) {
                     }
                   }, _callee4, _this3, [[0, 20]]);
                 }));
+
                 return function (_x2) {
-                  return ref.apply(this, arguments);
+                  return _ref4.apply(this, arguments);
                 };
               }());
 
@@ -446,7 +445,7 @@ var _class = function (_Base) {
               });
               pageModelInstance = this.model('page').setRelation('user');
               pagesPromise = pages.map(function () {
-                var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(item) {
+                var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(item) {
                   var user, summary, page;
                   return _regenerator2.default.wrap(function _callee5$(_context5) {
                     while (1) {
@@ -488,8 +487,9 @@ var _class = function (_Base) {
                     }
                   }, _callee5, _this3);
                 }));
+
                 return function (_x3) {
-                  return ref.apply(this, arguments);
+                  return _ref5.apply(this, arguments);
                 };
               }());
 
@@ -505,7 +505,7 @@ var _class = function (_Base) {
     }));
 
     function importFromWP() {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return importFromWP;

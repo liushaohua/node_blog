@@ -47,7 +47,7 @@ var _class = function (_Base) {
   }
 
   _class.prototype.getAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var _this2 = this;
 
       var themes, isExist;
@@ -65,7 +65,7 @@ var _class = function (_Base) {
               themes = themes.map(function (theme) {
                 return { id: theme, __info_file: _path2.default.join(THEME_DIR, theme, 'package.json') };
               }).filter(function () {
-                var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(theme) {
+                var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(theme) {
                   return _regenerator2.default.wrap(function _callee$(_context) {
                     while (1) {
                       switch (_context.prev = _context.next) {
@@ -83,12 +83,13 @@ var _class = function (_Base) {
                     }
                   }, _callee, _this2);
                 }));
+
                 return function (_x) {
-                  return ref.apply(this, arguments);
+                  return _ref2.apply(this, arguments);
                 };
-              }()).map(function (_ref) {
-                var id = _ref.id;
-                var __info_file = _ref.__info_file;
+              }()).map(function (_ref3) {
+                var id = _ref3.id;
+                var __info_file = _ref3.__info_file;
                 return think.extend({ id: id }, think.require(__info_file));
               });
               return _context2.abrupt('return', this.success(themes));
@@ -102,7 +103,7 @@ var _class = function (_Base) {
     }));
 
     function getAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return getAction;

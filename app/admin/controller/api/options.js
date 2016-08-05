@@ -60,9 +60,8 @@ var _class = function (_Base) {
    * 获取
    * @return {[type]} [description]
    */
-
   _class.prototype.getAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var type, model, options, secret, push_sites, result;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -139,7 +138,7 @@ var _class = function (_Base) {
     }));
 
     function getAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return getAction;
@@ -169,7 +168,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.putAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var type, data, model, id, site, result, _result;
 
       return _regenerator2.default.wrap(function _callee2$(_context2) {
@@ -232,14 +231,14 @@ var _class = function (_Base) {
     }));
 
     function putAction() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return putAction;
   }();
 
   _class.prototype.deleteAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
       var type, key;
       return _regenerator2.default.wrap(function _callee3$(_context3) {
         while (1) {
@@ -276,14 +275,14 @@ var _class = function (_Base) {
     }));
 
     function deleteAction() {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return deleteAction;
   }();
 
   _class.prototype.getPushSites = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
+    var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
       var options;
       return _regenerator2.default.wrap(function _callee4$(_context4) {
         while (1) {
@@ -305,17 +304,15 @@ var _class = function (_Base) {
     }));
 
     function getPushSites() {
-      return ref.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     }
 
     return getPushSites;
   }();
 
   _class.prototype.setPushSites = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(key, data) {
-      var push_sites,
-      /** 需要增加验证 key 正确性的请求 **/
-      url, appKey, appSecret, _result2, result;
+    var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5(key, data) {
+      var push_sites, url, appKey, appSecret, _result2, result;
 
       return _regenerator2.default.wrap(function _callee5$(_context5) {
         while (1) {
@@ -348,6 +345,7 @@ var _class = function (_Base) {
                 break;
               }
 
+              /** 需要增加验证 key 正确性的请求 **/
               url = data.url;
               appKey = data.appKey;
               appSecret = data.appSecret;
@@ -386,7 +384,7 @@ var _class = function (_Base) {
     }));
 
     function setPushSites(_x, _x2) {
-      return ref.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     }
 
     return setPushSites;

@@ -45,7 +45,6 @@ var _class = function (_think$controller$bas) {
    * @param  {[type]} http [description]
    * @return {[type]}      [description]
    */
-
   _class.prototype.init = function init(http) {
     _think$controller$bas.prototype.init.call(this, http);
     //home view path
@@ -57,7 +56,7 @@ var _class = function (_think$controller$bas) {
 
 
   _class.prototype.__before = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var model, options, navigation, themeConfig, theme, siteUrl;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -129,7 +128,7 @@ var _class = function (_think$controller$bas) {
     }));
 
     function __before() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return __before;
@@ -142,7 +141,7 @@ var _class = function (_think$controller$bas) {
 
 
   _class.prototype.displayView = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(name) {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(name) {
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
@@ -158,7 +157,7 @@ var _class = function (_think$controller$bas) {
     }));
 
     function displayView(_x) {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return displayView;

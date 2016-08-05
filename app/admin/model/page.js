@@ -65,7 +65,7 @@ var _class = function (_Post) {
   };
 
   _class.prototype.savePost = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(data) {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(data) {
       var info;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -98,7 +98,7 @@ var _class = function (_Post) {
     }));
 
     function savePost(_x) {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return savePost;

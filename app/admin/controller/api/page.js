@@ -49,7 +49,7 @@ var _class = function (_Post) {
   };
 
   _class.prototype.postAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var data, post, insertId;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -95,14 +95,14 @@ var _class = function (_Post) {
     }));
 
     function postAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return postAction;
   }();
 
   _class.prototype.putAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var data, rows;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -139,7 +139,7 @@ var _class = function (_Post) {
     }));
 
     function putAction() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return putAction;

@@ -35,7 +35,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * relation model
  */
-
 var _class = function (_Base) {
   (0, _inherits3.default)(_class, _Base);
 
@@ -49,7 +48,6 @@ var _class = function (_Base) {
    * @param  {} args []
    * @return {}         []
    */
-
   _class.prototype.init = function init() {
     var _Base$prototype$init;
 
@@ -79,7 +77,7 @@ var _class = function (_Base) {
   };
 
   _class.prototype.saveTag = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(data) {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(data) {
       var info;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -110,14 +108,14 @@ var _class = function (_Base) {
     }));
 
     function saveTag(_x) {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return saveTag;
   }();
 
   _class.prototype.deleteTag = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(tag_id) {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(tag_id) {
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
           switch (_context2.prev = _context2.next) {
@@ -134,7 +132,7 @@ var _class = function (_Base) {
     }));
 
     function deleteTag(_x2) {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return deleteTag;

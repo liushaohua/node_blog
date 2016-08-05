@@ -53,7 +53,6 @@ var _class = function (_think$service$base) {
    * @param  {[type]} info [description]
    * @return {[type]}      [description]
    */
-
   _class.prototype.init = function init(dbConfig, accountConfig, ip) {
     this.dbConfig = dbConfig;
     this.dbConfig.type = 'mysql';
@@ -100,10 +99,10 @@ var _class = function (_think$service$base) {
 
 
   _class.prototype.insertData = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var _this2 = this;
 
-      var model, dbExist, dbFile, content, _iterator2, _isArray2, _i2, _ref2, item, promises, optionsModel, salt;
+      var model, dbExist, dbFile, content, _iterator2, _isArray2, _i2, _ref3, item, promises, optionsModel, salt;
 
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -125,7 +124,6 @@ var _class = function (_think$service$base) {
               return model.query('CREATE DATABASE `' + this.dbConfig.database + '`').catch(function () {});
 
             case 7:
-              //model.close();
               dbFile = think.ROOT_PATH + think.sep + 'firekylin.sql';
 
               if (think.isFile(dbFile)) {
@@ -142,18 +140,18 @@ var _class = function (_think$service$base) {
                 item = item.trim();
                 var ignoreList = ['#', 'LOCK', 'UNLOCK'];
                 for (var _iterator = ignoreList, _isArray = Array.isArray(_iterator), _i = 0, _iterator = _isArray ? _iterator : (0, _getIterator3.default)(_iterator);;) {
-                  var _ref;
+                  var _ref2;
 
                   if (_isArray) {
                     if (_i >= _iterator.length) break;
-                    _ref = _iterator[_i++];
+                    _ref2 = _iterator[_i++];
                   } else {
                     _i = _iterator.next();
                     if (_i.done) break;
-                    _ref = _i.value;
+                    _ref2 = _i.value;
                   }
 
-                  var it = _ref;
+                  var it = _ref2;
 
                   if (item.indexOf(it) === 0) {
                     return false;
@@ -183,7 +181,7 @@ var _class = function (_think$service$base) {
               return _context.abrupt('break', 35);
 
             case 20:
-              _ref2 = _iterator2[_i2++];
+              _ref3 = _iterator2[_i2++];
               _context.next = 27;
               break;
 
@@ -198,10 +196,10 @@ var _class = function (_think$service$base) {
               return _context.abrupt('break', 35);
 
             case 26:
-              _ref2 = _i2.value;
+              _ref3 = _i2.value;
 
             case 27:
-              item = _ref2;
+              item = _ref3;
 
               item = item.trim();
 
@@ -277,7 +275,7 @@ var _class = function (_think$service$base) {
     }));
 
     function insertData() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return insertData;
@@ -287,8 +285,6 @@ var _class = function (_think$service$base) {
    * @return {[type]} [description]
    */
 
-
-  //optionsModel.close();
 
   _class.prototype.updateConfig = function updateConfig() {
     var data = {
@@ -309,7 +305,7 @@ var _class = function (_think$service$base) {
 
 
   _class.prototype.createAccount = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var password, model, data;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -337,7 +333,7 @@ var _class = function (_think$service$base) {
     }));
 
     function createAccount() {
-      return ref.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     }
 
     return createAccount;
@@ -348,10 +344,8 @@ var _class = function (_think$service$base) {
    */
 
 
-  //model.close();
-
   _class.prototype.run = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
+    var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
       var optionsModel;
       return _regenerator2.default.wrap(function _callee3$(_context3) {
         while (1) {
@@ -384,7 +378,7 @@ var _class = function (_think$service$base) {
     }));
 
     function run() {
-      return ref.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     }
 
     return run;

@@ -69,7 +69,6 @@ var _class = function (_think$model$relation) {
    * @param  {[type]} where [description]
    * @return {[type]}       [description]
    */
-
   _class.prototype.getWhereCondition = function getWhereCondition(where) {
     where = think.extend({}, where, {
       is_public: 1, //公开
@@ -92,10 +91,10 @@ var _class = function (_think$model$relation) {
 
 
   _class.prototype.getPostList = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(page) {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee(page) {
       var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
 
-      var field, _getWhereCondition, name, _ref, id, _where, where;
+      var field, _getWhereCondition, name, _ref2, id, _where, where;
 
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -126,8 +125,8 @@ var _class = function (_think$model$relation) {
               return this.model(name).field('id').setRelation(false).where({ name: options.tag || options.cate }).find();
 
             case 10:
-              _ref = _context.sent;
-              id = _ref.id;
+              _ref2 = _context.sent;
+              id = _ref2.id;
 
               if (!think.isEmpty(id)) {
                 _context.next = 14;
@@ -166,7 +165,7 @@ var _class = function (_think$model$relation) {
     }));
 
     function getPostList(_x, _x2) {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return getPostList;
@@ -180,8 +179,8 @@ var _class = function (_think$model$relation) {
 
 
   _class.prototype.getPostDetail = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(pathname) {
-      var where, detail, createTime, prevWhere, prevPromise, nextWhere, nextPromise, _ref2, prev, next;
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2(pathname) {
+      var where, detail, createTime, prevWhere, prevPromise, nextWhere, nextPromise, _ref4, prev, next;
 
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -217,9 +216,9 @@ var _class = function (_think$model$relation) {
               return _promise2.default.all([prevPromise, nextPromise]);
 
             case 13:
-              _ref2 = _context2.sent;
-              prev = _ref2[0];
-              next = _ref2[1];
+              _ref4 = _context2.sent;
+              prev = _ref4[0];
+              next = _ref4[1];
 
               detail.prev = prev;
               detail.next = next;
@@ -234,14 +233,14 @@ var _class = function (_think$model$relation) {
     }));
 
     function getPostDetail(_x4) {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return getPostDetail;
   }();
 
   _class.prototype.getPostRssList = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
+    var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
       var field, where, data;
       return _regenerator2.default.wrap(function _callee3$(_context3) {
         while (1) {
@@ -265,14 +264,14 @@ var _class = function (_think$model$relation) {
     }));
 
     function getPostRssList() {
-      return ref.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     }
 
     return getPostRssList;
   }();
 
   _class.prototype.getPostSitemapList = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
+    var _ref6 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
       var field, where, data;
       return _regenerator2.default.wrap(function _callee4$(_context4) {
         while (1) {
@@ -296,7 +295,7 @@ var _class = function (_think$model$relation) {
     }));
 
     function getPostSitemapList() {
-      return ref.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     }
 
     return getPostSitemapList;
@@ -308,7 +307,7 @@ var _class = function (_think$model$relation) {
 
 
   _class.prototype.getPostArchive = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5() {
+    var _ref7 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5() {
       var where, data, result;
       return _regenerator2.default.wrap(function _callee5$(_context5) {
         while (1) {
@@ -340,7 +339,7 @@ var _class = function (_think$model$relation) {
     }));
 
     function getPostArchive() {
-      return ref.apply(this, arguments);
+      return _ref7.apply(this, arguments);
     }
 
     return getPostArchive;
@@ -354,7 +353,7 @@ var _class = function (_think$model$relation) {
 
 
   _class.prototype.getPostSearch = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6(keyword, page) {
+    var _ref8 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6(keyword, page) {
       var where;
       return _regenerator2.default.wrap(function _callee6$(_context6) {
         while (1) {
@@ -374,7 +373,7 @@ var _class = function (_think$model$relation) {
     }));
 
     function getPostSearch(_x5, _x6) {
-      return ref.apply(this, arguments);
+      return _ref8.apply(this, arguments);
     }
 
     return getPostSearch;

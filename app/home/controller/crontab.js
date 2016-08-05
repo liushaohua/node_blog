@@ -44,9 +44,8 @@ var _class = function (_Base) {
    * sync comment num
    * @return {[type]} [description]
    */
-
   _class.prototype.syncCommentAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var SyncService, instance;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -69,7 +68,7 @@ var _class = function (_Base) {
     }));
 
     function syncCommentAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return syncCommentAction;

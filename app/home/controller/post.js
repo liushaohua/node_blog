@@ -48,7 +48,6 @@ var _class = function (_Base) {
    * index action
    * @return {[type]} [description]
    */
-
   _class.prototype.indexAction = function indexAction() {
     return this.listAction();
   };
@@ -59,7 +58,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.listAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var model, where, user, list, data, pagination;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -116,7 +115,7 @@ var _class = function (_Base) {
     }));
 
     function listAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return listAction;
@@ -128,7 +127,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.detailAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var pathname, detail;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -164,14 +163,14 @@ var _class = function (_Base) {
     }));
 
     function detailAction() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return detailAction;
   }();
 
   _class.prototype.pageAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
       var pathname, detail;
       return _regenerator2.default.wrap(function _callee3$(_context3) {
         while (1) {
@@ -204,7 +203,7 @@ var _class = function (_Base) {
     }));
 
     function pageAction() {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return pageAction;
@@ -216,7 +215,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.archiveAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
+    var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
       var model, data, i;
       return _regenerator2.default.wrap(function _callee4$(_context4) {
         while (1) {
@@ -246,14 +245,14 @@ var _class = function (_Base) {
     }));
 
     function archiveAction() {
-      return ref.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     }
 
     return archiveAction;
   }();
 
   _class.prototype.tagAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5() {
+    var _ref5 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee5() {
       var model, data;
       return _regenerator2.default.wrap(function _callee5$(_context5) {
         while (1) {
@@ -281,7 +280,7 @@ var _class = function (_Base) {
     }));
 
     function tagAction() {
-      return ref.apply(this, arguments);
+      return _ref5.apply(this, arguments);
     }
 
     return tagAction;
@@ -293,7 +292,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.searchAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6() {
+    var _ref6 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee6() {
       var keyword, postModel, searchResultPromise, tagModel, hotTagsPromise;
       return _regenerator2.default.wrap(function _callee6$(_context6) {
         while (1) {
@@ -326,7 +325,7 @@ var _class = function (_Base) {
     }));
 
     function searchAction() {
-      return ref.apply(this, arguments);
+      return _ref6.apply(this, arguments);
     }
 
     return searchAction;

@@ -44,7 +44,6 @@ var _class = function (_Base) {
    * index
    * @return {[type]} [description]
    */
-
   _class.prototype.indexAction = function indexAction() {
     return this.action('post', 'list');
   };
@@ -55,7 +54,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.rssAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
+    var _ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee() {
       var model, list;
       return _regenerator2.default.wrap(function _callee$(_context) {
         while (1) {
@@ -83,7 +82,7 @@ var _class = function (_Base) {
     }));
 
     function rssAction() {
-      return ref.apply(this, arguments);
+      return _ref.apply(this, arguments);
     }
 
     return rssAction;
@@ -96,7 +95,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.sitemapAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
+    var _ref2 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee2() {
       var model, list;
       return _regenerator2.default.wrap(function _callee2$(_context2) {
         while (1) {
@@ -119,7 +118,7 @@ var _class = function (_Base) {
     }));
 
     function sitemapAction() {
-      return ref.apply(this, arguments);
+      return _ref2.apply(this, arguments);
     }
 
     return sitemapAction;
@@ -131,7 +130,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.installAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
+    var _ref3 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee3() {
       var errors, data, dbInfo, account, InstallService, instance, message;
       return _regenerator2.default.wrap(function _callee3$(_context3) {
         while (1) {
@@ -207,7 +206,7 @@ var _class = function (_Base) {
     }));
 
     function installAction() {
-      return ref.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     }
 
     return installAction;
@@ -219,7 +218,7 @@ var _class = function (_Base) {
 
 
   _class.prototype.contributorAction = function () {
-    var ref = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
+    var _ref4 = (0, _asyncToGenerator3.default)(_regenerator2.default.mark(function _callee4() {
       var user;
       return _regenerator2.default.wrap(function _callee4$(_context4) {
         while (1) {
@@ -266,7 +265,7 @@ var _class = function (_Base) {
     }));
 
     function contributorAction() {
-      return ref.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     }
 
     return contributorAction;
